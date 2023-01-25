@@ -1,0 +1,8 @@
+.balance{
+    padding-top: 5px;
+    margin-left: 1rem;
+}
+.balance:hover{
+    font-size: large;
+    opacity: 1;
+}

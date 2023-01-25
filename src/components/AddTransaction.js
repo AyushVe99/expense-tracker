@@ -9,7 +9,7 @@ const AddTransaction = () => {
         e.preventDefault();
         const newTransaction={
             id: Math.floor(Math.random()*100000000),
-            text,
+            text:text,
             amount: +amount
         }
         console.log(newTransaction);
@@ -17,15 +17,14 @@ const AddTransaction = () => {
     }
   return (
     <>
-       <h3>Add new transaction</h3>
+       <h3 style={{paddingLeft: "5px"}}>Add New Transaction</h3>
       <form onSubmit={onSubmit}>
         <div className="form-control">
-          <label htmlFor="text">Text</label>
-          <input type="text" value={text} onChange={(e)=>{setText(e.target.value)}} placeholder="Enter text..." />
+          <label htmlFor="text" style={{paddingLeft: "5px"}}>Text</label>
+          <input type="text"  value={text} onChange={(e)=>{setText(e.target.value)}} placeholder="Enter text..." />
         </div>
         <div className="form-control">
-          <label htmlFor="amount"
-            >Amount <br />
+          <label htmlFor="amount" style={{paddingLeft: "5px"}}>Amount <br />
            </label>
           <input type="number" value={amount} onChange={(e)=>{setAmount(e.target.value)}} placeholder="Enter amount..." />
         </div>

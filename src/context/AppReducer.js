@@ -9,7 +9,7 @@ export default(state,action)=>{
         case 'ADD_TRANSACTION':
                 return{
                  ...state, 
-                 transaction: [...state.transactions,action.payload]
+                 transactions: [...state.transactions,action.payload]
                 }
             
         default:
